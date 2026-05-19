@@ -107,7 +107,7 @@ def generate_scramble():
         last_face = face
     return " ".join(moves)
 
-@app.route('/api')
+@app.route('/')
 def index():
     scramble = generate_scramble()
     leaderboard = get_leaderboard()
